@@ -37,7 +37,16 @@
     <header class="container-fluid fixed-top"></header>
 
     {% if massages %}
-    <div class="massage-con"></div>
+    <div class="massage-container"></div>
     {% endif %}
+
+    {% block page_header%}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block postloadjs %}
+    {% endblock %}
   </body>
 </html>

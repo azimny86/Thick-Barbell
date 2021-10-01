@@ -17,7 +17,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     {% endblock %}
 
-    {% bloc extracss %}
+    {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
@@ -36,11 +36,11 @@
   <body>
     <header class="container-fluid fixed-top"></header>
 
-    {% if massages %}
-    <div class="massage-container"></div>
+    {% if messages %}
+    <div class="message-container"></div>
     {% endif %}
 
-    {% block page_header%}
+    {% block page_header %}
     {% endblock %}
 
     {% block content %}
